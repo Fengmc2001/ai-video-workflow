@@ -70,13 +70,13 @@ The story comes first. Character sheets and shot plans give the generators somet
 
 ### A working canvas · 画布里的工作流
 
-[![Dreamina canvas with character sheets, scene references and a video prompt · 即梦画布中的人物定妆照、场景参考和视频提示词](assets/showcase/dreamina-workflow.png)](assets/showcase/dreamina-workflow.png)
+[![Dreamina canvas with character sheets, scene references and a video prompt · 即梦画布中的人物定妆照、场景参考和视频提示词](assets/showcase/dreamina-workflow.png)](https://dreamina.capcut.com/ai-tool/ai-canvas/27fb6c0e-a09a-4de9-bd64-43281ece52e2?enter_from=noew_canvas_shared_link)
 
 Character sheets, scene references and shot prompts sit together on the canvas. The connections show which references feed each generated clip.
 
-人物定妆照、场景参考和逐镜提示词放在同一张画布里，连线标出每段视频用到的参考。点击截图可查看大图。
+人物定妆照、场景参考和逐镜提示词放在同一张画布里，连线标出每段视频用到的参考。点击截图进入共享画布，下方另有原图入口。
 
-**[Open the shared Dreamina canvas · 打开共享即梦画布](https://dreamina.capcut.com/ai-tool/ai-canvas/27fb6c0e-a09a-4de9-bd64-43281ece52e2?enter_from=noew_canvas_shared_link)**
+**[Open the shared Dreamina canvas · 打开共享即梦画布](https://dreamina.capcut.com/ai-tool/ai-canvas/27fb6c0e-a09a-4de9-bd64-43281ece52e2?enter_from=noew_canvas_shared_link)** · [View full-size screenshot · 查看原图](assets/showcase/dreamina-workflow.png)
 
 | Stage · 阶段 | What goes into it · 做什么 |
 | --- | --- |

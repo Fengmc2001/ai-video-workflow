@@ -8,9 +8,9 @@ The four buttons below the player combine dialogue and picture quality: Mandarin
 
 播放器下方的四个按钮按 2×2 排列：中文、英文各一行，均可选 1080p60 或 540p30。切换时保留播放进度和播放／暂停状态。
 
-The making section includes a full-size Dreamina workflow screenshot and a link to the shared canvas.
+The making section includes a Dreamina workflow screenshot. Select it to open the shared canvas in a new tab; a separate link opens the full-size image.
 
-制作过程区域展示即梦工作流截图，可点击查看原图，或打开共享画布。
+制作过程区域展示即梦工作流截图，点击后在新标签页打开共享画布；另有独立的原图查看链接。
 
 ## Preview locally · 本地预览
 
