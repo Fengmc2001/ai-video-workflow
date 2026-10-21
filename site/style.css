@@ -100,6 +100,16 @@ h2 span{display:block;font:500 19px/1.6 -apple-system,BlinkMacSystemFont,"PingFa
 .comparison-copy .caption{margin-top:14px;margin-bottom:20px}
 .workflow-intro{font-size:14px;max-width:780px;margin-bottom:30px;line-height:1.85}
 .workflow-intro .zh{display:inline-block;font-size:13px;margin-top:6px}
+.canvas-example{margin:0 0 34px;scroll-margin-top:26px}
+.canvas-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:15px 24px;margin-bottom:18px}
+.canvas-heading h3{font-size:18px;font-weight:600;margin:0;line-height:1.5}
+.canvas-heading h3 span{display:block;font-size:14px;color:var(--muted);font-weight:400;margin-top:2px}
+.canvas-heading .button{margin:0;padding:10px 14px;font-size:11px}
+.canvas-image{display:block;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:#101010}
+.canvas-image img{width:100%;height:auto}
+.canvas-example figcaption{margin-top:15px;font-size:12px;line-height:1.8;max-width:850px}
+.canvas-example figcaption p{margin-bottom:5px}
+.canvas-example figcaption .text-link{display:inline-block;font-size:11px;margin-top:5px}
 .steps-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
 .step{position:relative;padding:25px 24px;background:#faf9f4;border:1px solid var(--line);border-radius:4px;text-decoration:none}
 .step-number{color:var(--gold);font-size:11px;display:block;margin-bottom:16px}

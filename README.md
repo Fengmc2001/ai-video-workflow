@@ -68,6 +68,16 @@ The story comes first. Character sheets and shot plans give the generators somet
 
 先想清楚故事，再做人物和分镜。参考图、台词与镜头一起交给生成工具，最后在本地处理画面和声音。
 
+### A working canvas · 画布里的工作流
+
+[![Dreamina canvas with character sheets, scene references and a video prompt · 即梦画布中的人物定妆照、场景参考和视频提示词](assets/showcase/dreamina-workflow.png)](assets/showcase/dreamina-workflow.png)
+
+Character sheets, scene references and shot prompts sit together on the canvas. The connections show which references feed each generated clip.
+
+人物定妆照、场景参考和逐镜提示词放在同一张画布里，连线标出每段视频用到的参考。点击截图可查看大图。
+
+**[Open the shared Dreamina canvas · 打开共享即梦画布](https://dreamina.capcut.com/ai-tool/ai-canvas/27fb6c0e-a09a-4de9-bd64-43281ece52e2?enter_from=noew_canvas_shared_link)**
+
 | Stage · 阶段 | What goes into it · 做什么 |
 | --- | --- |
 | [01 Topic · 选题](docs/01-topic.md) | Find a familiar disagreement and decide where it leads.<br>找一个熟悉的分歧，想清楚结尾人物会作出什么选择。 |
