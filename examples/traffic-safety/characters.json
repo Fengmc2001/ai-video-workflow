@@ -1,0 +1,35 @@
+[
+  {
+    "id": "linhao",
+    "name": "林浩",
+    "age": 13,
+    "appearance": "偏瘦，黑色碎发，白色藏青领Polo、深蓝长裤、黑红双肩包。推深蓝色普通自行车。",
+    "personality": "自信、爱逞强，愿意听道理。",
+    "voice": "清亮有精神的少年男声，自信里带一点得意。",
+    "gesture": "扶车、轻扬下巴，接受建议时点头。",
+    "reference": "linhao",
+    "voice_reference": "linhao_voice"
+  },
+  {
+    "id": "xunuo",
+    "name": "许诺",
+    "age": 13,
+    "appearance": "高马尾，白色藏青领Polo、深蓝长裤、藏青双肩包。",
+    "personality": "认真、友善，关心朋友。",
+    "voice": "清楚自然的少女声，语气温和而坚定。",
+    "gesture": "说话时看向两位同学，用目光照顾到每个人。",
+    "reference": "xunuo",
+    "voice_reference": "xunuo_voice"
+  },
+  {
+    "id": "zhangwei",
+    "name": "张伟",
+    "age": 13,
+    "appearance": "微胖圆脸，黑色寸头，比两位同伴稍矮，白色藏青领Polo、深蓝长裤、橙色双肩包。",
+    "personality": "憨厚活泼，习惯先征求认同。",
+    "voice": "稍厚而柔和的少年男声，疑问句短停顿，收尾轻快。",
+    "gesture": "挠头、来回看看两人，再开朗地点头。",
+    "reference": "zhangwei",
+    "voice_reference": "zhangwei_voice"
+  }
+]

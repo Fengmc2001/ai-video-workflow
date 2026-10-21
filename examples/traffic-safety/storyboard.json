@@ -1,0 +1,141 @@
+[
+  {
+    "id": "G1",
+    "duration": 26,
+    "references": [
+      "linhao",
+      "xunuo",
+      "zhangwei",
+      "group",
+      "campus",
+      "bicycle"
+    ],
+    "prompt_file": "prompts/G1.md",
+    "shots": [
+      {
+        "id": "G1_01",
+        "start": 0,
+        "end": 4,
+        "scene": "campus",
+        "speaker": "linhao",
+        "lines": [
+          "A0_intro"
+        ],
+        "action": "林荫道远景，三人一起走，林浩随口感叹。"
+      },
+      {
+        "id": "G1_02",
+        "start": 4,
+        "end": 10,
+        "scene": "campus",
+        "speaker": "linhao",
+        "lines": [
+          "A1"
+        ],
+        "action": "林浩扶车，轻扬下巴。"
+      },
+      {
+        "id": "G1_03",
+        "start": 10,
+        "end": 15,
+        "scene": "campus",
+        "speaker": "xunuo",
+        "lines": [
+          "B1"
+        ],
+        "action": "许诺转向林浩，认真提醒。"
+      },
+      {
+        "id": "G1_04",
+        "start": 15,
+        "end": 22,
+        "scene": "campus",
+        "speaker": "linhao",
+        "lines": [
+          "A2"
+        ],
+        "action": "林浩提出自己的理由，目光转向朋友。"
+      },
+      {
+        "id": "G1_05",
+        "start": 22,
+        "end": 26,
+        "scene": "campus",
+        "speaker": null,
+        "lines": [],
+        "action": "三人停下，张伟看看两人，准备接话。"
+      }
+    ]
+  },
+  {
+    "id": "G2",
+    "duration": 26,
+    "references": [
+      "linhao",
+      "xunuo",
+      "zhangwei",
+      "group",
+      "campus",
+      "bicycle",
+      "g1_last_frame",
+      "linhao_voice",
+      "xunuo_voice"
+    ],
+    "prompt_file": "prompts/G2.md",
+    "shots": [
+      {
+        "id": "G2_01",
+        "start": 0,
+        "end": 5.5,
+        "scene": "campus",
+        "speaker": "zhangwei",
+        "lines": [
+          "C1"
+        ],
+        "action": "张伟先看许诺，再看看林浩。"
+      },
+      {
+        "id": "G2_02",
+        "start": 5.5,
+        "end": 13.5,
+        "scene": "campus",
+        "speaker": "xunuo",
+        "lines": [
+          "B2"
+        ],
+        "action": "许诺同时回应两位同学。"
+      },
+      {
+        "id": "G2_03",
+        "start": 13.5,
+        "end": 19.5,
+        "scene": "campus",
+        "speaker": "linhao",
+        "lines": [
+          "A3"
+        ],
+        "action": "林浩接受建议，轻点头。"
+      },
+      {
+        "id": "G2_04",
+        "start": 19.5,
+        "end": 23.5,
+        "scene": "campus",
+        "speaker": "zhangwei",
+        "lines": [
+          "C2"
+        ],
+        "action": "张伟开朗地回应。"
+      },
+      {
+        "id": "G2_05",
+        "start": 23.5,
+        "end": 26,
+        "scene": "campus",
+        "speaker": null,
+        "lines": [],
+        "action": "三人转身继续走，林浩推着自行车。"
+      }
+    ]
+  }
+]

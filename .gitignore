@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv*/
+.env
+.env.*
+!.env.example
+.DS_Store
+weights/
+workspaces/
+dist/
+build/
+.cache/
+*.log
+provider_state/

@@ -1,0 +1,32 @@
+{
+  "source_video": {
+    "width": 854,
+    "height": 480,
+    "fps": "about 24"
+  },
+  "interpolation": "Dreamina official 60fps",
+  "super_resolution": {
+    "model": "RealESRGAN_x2plus",
+    "strength": 0.85,
+    "model_scale": 2,
+    "output_width": 1920,
+    "output_height": 1080
+  },
+  "assembly": {
+    "fps": 60,
+    "audio_rate": 48000,
+    "duration_seconds": 52.133333,
+    "frames": 3128,
+    "movie_timescale": 48000
+  },
+  "watermark": {
+    "text": "Fengmc",
+    "position": "bottom-right",
+    "font_size": 34,
+    "margin": 40
+  },
+  "published_video": {
+    "file": "traffic-safety-fengmc-1080p60.mp4",
+    "sha256": "61ea35d13186f2ecb7d0646e5be261c8a407c2d92ef24dfaf6c1d522615bb8cf"
+  }
+}

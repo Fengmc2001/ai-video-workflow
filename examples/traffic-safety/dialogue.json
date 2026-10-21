@@ -1,0 +1,50 @@
+[
+  {
+    "id": "A0_intro",
+    "speaker": "linhao",
+    "text": "自行车天天骑着也太累了！",
+    "performance": "随口感叹，轻微嫌累。"
+  },
+  {
+    "id": "A1",
+    "speaker": "linhao",
+    "text": "哎，我虽然还没满十六岁，但我骑电动车技术特别好，肯定不会有事的！",
+    "performance": "自信、轻松，略带得意"
+  },
+  {
+    "id": "B1",
+    "speaker": "xunuo",
+    "text": "可是……交规就是交规呀。没满十六岁骑电动车上路，既违法，又危险。",
+    "performance": "担心但认真，“可是”后停半拍"
+  },
+  {
+    "id": "A2",
+    "speaker": "linhao",
+    "text": "哎呀，我就骑家里的电动车，到附近便利店嘛，两分钟而已，能有什么危险？",
+    "performance": "有点不服气、嘴硬，反问上扬"
+  },
+  {
+    "id": "C1",
+    "speaker": "zhangwei",
+    "text": "许诺，可我爸妈都让我骑了……就去附近，也不行吗？",
+    "performance": "向许诺试探，略犹豫但不拖字"
+  },
+  {
+    "id": "B2",
+    "speaker": "xunuo",
+    "text": "爸妈同意，也得守交规呀。咱们都没满十六岁，不能骑电动自行车上路。",
+    "performance": "友善提醒两人，目光从张伟转到林浩"
+  },
+  {
+    "id": "A3",
+    "speaker": "linhao",
+    "text": "嗯，你说得对。我还是骑自行车吧，电动车等满十六岁再说。",
+    "performance": "坦然接受，仍有自信，不委屈"
+  },
+  {
+    "id": "C2",
+    "speaker": "zhangwei",
+    "text": "行，电动车我也先不骑了。走吧，林浩！",
+    "performance": "明确也接受建议，开朗收尾"
+  }
+]

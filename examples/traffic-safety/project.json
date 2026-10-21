@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "title": "骑电动车的小争论",
+  "brief": {
+    "topic": "未成年人骑电动车的生活讨论",
+    "audience": "初中生",
+    "takeaway": "结合道路上驾驶电动自行车的年龄规定，作出安全选择。",
+    "duration_seconds": [
+      45,
+      60
+    ],
+    "aspect_ratio": "16:9",
+    "style": "电影感三维动画",
+    "audio_mode": "native"
+  },
+  "characters": [
+    {
+      "id": "linhao",
+      "name": "林浩",
+      "age": 13,
+      "appearance": "偏瘦，黑色碎发，白色藏青领Polo、深蓝长裤、黑红双肩包。推深蓝色普通自行车。",
+      "personality": "自信、爱逞强，愿意听道理。",
+      "voice": "清亮有精神的少年男声，自信里带一点得意。",
+      "gesture": "扶车、轻扬下巴，接受建议时点头。",
+      "reference": "linhao",
+      "voice_reference": "linhao_voice"
+    },
+    {
+      "id": "xunuo",
+      "name": "许诺",
+      "age": 13,
+      "appearance": "高马尾，白色藏青领Polo、深蓝长裤、藏青双肩包。",
+      "personality": "认真、友善，关心朋友。",
+      "voice": "清楚自然的少女声，语气温和而坚定。",
+      "gesture": "说话时看向两位同学，用目光照顾到每个人。",
+      "reference": "xunuo",
+      "voice_reference": "xunuo_voice"
+    },
+    {
+      "id": "zhangwei",
+      "name": "张伟",
+      "age": 13,
+      "appearance": "微胖圆脸，黑色寸头，比两位同伴稍矮，白色藏青领Polo、深蓝长裤、橙色双肩包。",
+      "personality": "憨厚活泼，习惯先征求认同。",
+      "voice": "稍厚而柔和的少年男声，疑问句短停顿，收尾轻快。",
+      "gesture": "挠头、来回看看两人，再开朗地点头。",
+      "reference": "zhangwei",
+      "voice_reference": "zhangwei_voice"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "campus",
+      "name": "放学后的校园林荫道",
+      "light": "低角度暖金色夕阳，树叶间有斑驳光影。",
+      "layout": "道路尽头为校门，教学楼与围栏分列两侧，路旁有木长椅。",
+      "prop": "林浩扶着深蓝色普通自行车。"
+    }
+  ],
+  "references": {
+    "linhao": {
+      "type": "image",
+      "path": "../../assets/characters/linhao.jpg"
+    },
+    "xunuo": {
+      "type": "image",
+      "path": "../../assets/characters/xunuo.jpg"
+    },
+    "zhangwei": {
+      "type": "image",
+      "path": "../../assets/characters/zhangwei.jpg"
+    },
+    "campus": {
+      "type": "image",
+      "path": "../../assets/campus-path.jpg"
+    },
+    "group": {
+      "type": "image",
+      "path": "../../assets/group.jpg"
+    },
+    "bicycle": {
+      "type": "image",
+      "path": "../../assets/bicycle.jpg"
+    },
+    "g1_last_frame": {
+      "type": "image",
+      "path": "../../assets/g1-last-frame.jpg"
+    },
+    "linhao_voice": {
+      "type": "audio",
+      "path": "../../assets/voices/linhao.wav"
+    },
+    "xunuo_voice": {
+      "type": "audio",
+      "path": "../../assets/voices/xunuo.wav"
+    },
+    "zhangwei_voice": {
+      "type": "audio",
+      "path": "../../assets/voices/zhangwei.wav"
+    }
+  },
+  "dialogue": [
+    {
+      "id": "A0_intro",
+      "speaker": "linhao",
+      "text": "自行车天天骑着也太累了！",
+      "performance": "随口感叹，轻微嫌累。"
+    },
+    {
+      "id": "A1",
+      "speaker": "linhao",
+      "text": "哎，我虽然还没满十六岁，但我骑电动车技术特别好，肯定不会有事的！",
+      "performance": "自信、轻松，略带得意"
+    },
+    {
+      "id": "B1",
+      "speaker": "xunuo",
+      "text": "可是……交规就是交规呀。没满十六岁骑电动车上路，既违法，又危险。",
+      "performance": "担心但认真，“可是”后停半拍"
+    },
+    {
+      "id": "A2",
+      "speaker": "linhao",
+      "text": "哎呀，我就骑家里的电动车，到附近便利店嘛，两分钟而已，能有什么危险？",
+      "performance": "有点不服气、嘴硬，反问上扬"
+    },
+    {
+      "id": "C1",
+      "speaker": "zhangwei",
+      "text": "许诺，可我爸妈都让我骑了……就去附近，也不行吗？",
+      "performance": "向许诺试探，略犹豫但不拖字"
+    },
+    {
+      "id": "B2",
+      "speaker": "xunuo",
+      "text": "爸妈同意，也得守交规呀。咱们都没满十六岁，不能骑电动自行车上路。",
+      "performance": "友善提醒两人，目光从张伟转到林浩"
+    },
+    {
+      "id": "A3",
+      "speaker": "linhao",
+      "text": "嗯，你说得对。我还是骑自行车吧，电动车等满十六岁再说。",
+      "performance": "坦然接受，仍有自信，不委屈"
+    },
+    {
+      "id": "C2",
+      "speaker": "zhangwei",
+      "text": "行，电动车我也先不骑了。走吧，林浩！",
+      "performance": "明确也接受建议，开朗收尾"
+    }
+  ],
+  "segments": [
+    {
+      "id": "G1",
+      "duration": 26,
+      "references": [
+        "linhao",
+        "xunuo",
+        "zhangwei",
+        "group",
+        "campus",
+        "bicycle"
+      ],
+      "prompt_file": "prompts/G1.md",
+      "shots": [
+        {
+          "id": "G1_01",
+          "start": 0,
+          "end": 4,
+          "scene": "campus",
+          "speaker": "linhao",
+          "lines": [
+            "A0_intro"
+          ],
+          "action": "林荫道远景，三人一起走，林浩随口感叹。"
+        },
+        {
+          "id": "G1_02",
+          "start": 4,
+          "end": 10,
+          "scene": "campus",
+          "speaker": "linhao",
+          "lines": [
+            "A1"
+          ],
+          "action": "林浩扶车，轻扬下巴。"
+        },
+        {
+          "id": "G1_03",
+          "start": 10,
+          "end": 15,
+          "scene": "campus",
+          "speaker": "xunuo",
+          "lines": [
+            "B1"
+          ],
+          "action": "许诺转向林浩，认真提醒。"
+        },
+        {
+          "id": "G1_04",
+          "start": 15,
+          "end": 22,
+          "scene": "campus",
+          "speaker": "linhao",
+          "lines": [
+            "A2"
+          ],
+          "action": "林浩提出自己的理由，目光转向朋友。"
+        },
+        {
+          "id": "G1_05",
+          "start": 22,
+          "end": 26,
+          "scene": "campus",
+          "speaker": null,
+          "lines": [],
+          "action": "三人停下，张伟看看两人，准备接话。"
+        }
+      ]
+    },
+    {
+      "id": "G2",
+      "duration": 26,
+      "references": [
+        "linhao",
+        "xunuo",
+        "zhangwei",
+        "group",
+        "campus",
+        "bicycle",
+        "g1_last_frame",
+        "linhao_voice",
+        "xunuo_voice"
+      ],
+      "prompt_file": "prompts/G2.md",
+      "shots": [
+        {
+          "id": "G2_01",
+          "start": 0,
+          "end": 5.5,
+          "scene": "campus",
+          "speaker": "zhangwei",
+          "lines": [
+            "C1"
+          ],
+          "action": "张伟先看许诺，再看看林浩。"
+        },
+        {
+          "id": "G2_02",
+          "start": 5.5,
+          "end": 13.5,
+          "scene": "campus",
+          "speaker": "xunuo",
+          "lines": [
+            "B2"
+          ],
+          "action": "许诺同时回应两位同学。"
+        },
+        {
+          "id": "G2_03",
+          "start": 13.5,
+          "end": 19.5,
+          "scene": "campus",
+          "speaker": "linhao",
+          "lines": [
+            "A3"
+          ],
+          "action": "林浩接受建议，轻点头。"
+        },
+        {
+          "id": "G2_04",
+          "start": 19.5,
+          "end": 23.5,
+          "scene": "campus",
+          "speaker": "zhangwei",
+          "lines": [
+            "C2"
+          ],
+          "action": "张伟开朗地回应。"
+        },
+        {
+          "id": "G2_05",
+          "start": 23.5,
+          "end": 26,
+          "scene": "campus",
+          "speaker": null,
+          "lines": [],
+          "action": "三人转身继续走，林浩推着自行车。"
+        }
+      ]
+    }
+  ]
+}

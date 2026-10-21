@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "title": "我的动画短片",
+  "brief": {
+    "topic": "",
+    "audience": "",
+    "takeaway": "",
+    "duration_seconds": [
+      45,
+      60
+    ],
+    "aspect_ratio": "16:9",
+    "style": "",
+    "audio_mode": "native"
+  },
+  "characters": [],
+  "scenes": [],
+  "references": {},
+  "dialogue": [],
+  "segments": []
+}

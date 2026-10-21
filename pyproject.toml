@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-video-workflow"
+version = "0.1.0"
+description = "Plan an AI short film and finish it with native audio, super-resolution and precise local exports."
+requires-python = ">=3.10"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "src/aivideo_workflow/_vendor/LICENSE-BasicSR.txt"]
+authors = [{name = "Fengmc"}]
+dependencies = []
+
+[project.optional-dependencies]
+superres = ["torch>=2.6", "av>=14,<20", "opencv-python-headless>=4.8", "numpy>=1.24", "tqdm>=4.65"]
+
+[project.scripts]
+aivideo = "aivideo_workflow.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Fengmc2001/ai-video-workflow"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"aivideo_workflow._vendor" = ["LICENSE-*.txt"]
