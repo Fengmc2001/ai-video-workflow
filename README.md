@@ -2,82 +2,111 @@
 
 [![Checks](https://github.com/Fengmc2001/ai-video-workflow/actions/workflows/checks.yml/badge.svg)](https://github.com/Fengmc2001/ai-video-workflow/actions/workflows/checks.yml)
 
-从一个选题，做出一支有角色、有对话、有完整起承转合的动画短片。
+A short animated film, and the materials used to make it: characters, shots, prompts and local postproduction tools.
 
-这里整理了我制作 AI 视频时使用的流程：先写清故事要表达什么，再设计人物和场景，拆成分镜，生成画面与同期声，最后在本地完成精修、超分和合成。每一步都有对应的模板，后期工具也可以单独使用。
+一支动画短片，以及它的制作材料：人物定妆照、分镜、提示词和本地后期工具。
 
-[![骑电动车的小争论](assets/demo-poster.jpg)](https://github.com/Fengmc2001/ai-video-workflow/releases/download/v0.1.0/traffic-safety-fengmc-1080p60.mp4)
+**[Watch online · 在线观看](https://fengmc2001.github.io/ai-video-workflow/)** · [The making · 制作过程](#from-idea-to-film--从选题到成片) · [Use the tools · 使用工具](#try-it--动手做一支)
 
-**《骑电动车的小争论》** · 52.13 秒 · 1920×1080 · 60fps · 中文同期声 · Fengmc 水印
+## The film · 成片
 
-[完整视频](https://github.com/Fengmc2001/ai-video-workflow/releases/tag/v0.1.0) · [轻量预览](assets/demo-preview.mp4) · [这个短片怎么做](examples/traffic-safety/README.md)
+[![Watch the full film · 观看完整成片](assets/showcase/film-preview.gif)](https://fengmc2001.github.io/ai-video-workflow/#film)
 
-## 从哪里开始
+**The e-bike debate · 骑电动车的小争论**<br>
+52.13s · 1920 × 1080 · 60fps · Mandarin dialogue / 中文同期声 · Fengmc
 
-```mermaid
-flowchart LR
-    A[选题与表达] --> B[人物画像]
-    B --> C[剧情与分镜]
-    C --> D[图像与视频提示词]
-    D --> E[生成与局部精修]
-    E --> F[插帧、超分与合成]
-```
+Three classmates are walking home. Lin Hao thinks an e-bike would make life easier; Xu Nuo and Zhang Wei have their own views. The conversation gives each of them a reason to reconsider.
 
-| 阶段 | 主要做什么 | 文件 |
-| --- | --- | --- |
-| 选题 | 确定观众、冲突和结尾的选择 | [选题](docs/01-topic.md) |
-| 人物 | 写清性格、外形、声音和人物关系 | [人物画像](docs/02-characters.md) |
-| 剧本 | 把观点写进对话，安排场景和动作 | [剧情与分镜](docs/03-story-and-shots.md) |
-| 提示词 | 把人物、参考图、台词和镜头绑定 | [提示词设计](docs/04-prompts.md) |
-| 精修 | 补充动机、调整语气、替换指定片段 | [局部精修](docs/05-refinement.md) |
-| 后期 | 插帧、Real-ESRGAN 超分、原声剪辑、合成、水印 | [后期脚本](docs/06-postproduction.md) |
+林浩觉得天天骑自行车太累，想换电动车。许诺谈起上路年龄，张伟提到家长同意。三个人把话说开，也各自作出了选择。
 
-完整示例在 `examples/traffic-safety/`。想从自己的题材开始，可以先读[选题模板](prompts/01-topic.md)。
+The image above is a silent excerpt. **[Play the full film](https://fengmc2001.github.io/ai-video-workflow/#film)** in the browser, with sound and a 1080p60 option.
 
-## 跑起来
+上方是静音片段预览。**[点击播放完整成片](https://fengmc2001.github.io/ai-video-workflow/#film)**，在浏览器里观看，带原声，可选 1080p60。
 
-需要 Python 3.10+ 和 FFmpeg。macOS 可以用 `brew install ffmpeg`；Ubuntu 用 `sudo apt-get install ffmpeg`。
+[Release & MP4 · 成片下载](https://github.com/Fengmc2001/ai-video-workflow/releases/tag/v0.1.0) · [Case study · 完整案例](examples/traffic-safety/README.md)
 
-```bash
+## Meet the cast · 人物定妆照
+
+| Lin Hao · 林浩 | Xu Nuo · 许诺 | Zhang Wei · 张伟 |
+| :---: | :---: | :---: |
+| [![Lin Hao character sheet · 林浩定妆照](assets/characters/linhao.jpg)](assets/characters/linhao.jpg) | [![Xu Nuo character sheet · 许诺定妆照](assets/characters/xunuo.jpg)](assets/characters/xunuo.jpg) | [![Zhang Wei character sheet · 张伟定妆照](assets/characters/zhangwei.jpg)](assets/characters/zhangwei.jpg) |
+| Confident and a little stubborn. Willing to listen.<br>自信，有点爱逞强，也愿意听道理。 | Serious about the rules, warm with her friends.<br>认真守规则，提醒朋友时坚定而友善。 | Lively and good-natured. Likes to ask what others think.<br>憨厚活泼，习惯先问问大家。 |
+| Tousled hair · slim build · black-and-red backpack<br>黑色碎发 · 偏瘦 · 黑红书包 | High ponytail · navy backpack<br>高马尾 · 藏青书包 | Buzz cut · round face · orange backpack<br>寸头 · 微胖圆脸 · 橙色书包 |
+
+[Character notes · 人物资料](examples/traffic-safety/characters.json) · [Dialogue · 台词表](examples/traffic-safety/dialogue.json)
+
+## The story in eight frames · 八个镜头看剧情
+
+Frames from the finished film. Each image links to that moment in the online player.
+
+以下取自成片。点击画面，可以在播放页跳到对应时刻。
+
+| | |
+| :--- | :--- |
+| **01 · 00:02**<br>[![A walk after school · 放学路上](assets/showcase/shot-01.jpg)](https://fengmc2001.github.io/ai-video-workflow/?t=2#film)<br>A walk after school<br>放学路上 | **02 · 00:07**<br>[![Lin Hao makes his case · 林浩说出想法](assets/showcase/shot-02.jpg)](https://fengmc2001.github.io/ai-video-workflow/?t=7.5#film)<br>Lin Hao makes his case<br>林浩说出想法 |
+| **03 · 00:12**<br>[![Xu Nuo raises a concern · 许诺认真提醒](assets/showcase/shot-03.jpg)](https://fengmc2001.github.io/ai-video-workflow/?t=12.5#film)<br>Xu Nuo raises a concern<br>许诺认真提醒 | **04 · 00:20**<br>[![It is only a short ride · 就去附近而已](assets/showcase/shot-04.jpg)](https://fengmc2001.github.io/ai-video-workflow/?t=20.5#film)<br>It is only a short ride<br>就去附近而已 |
+| **05 · 00:29**<br>[![Zhang Wei asks about permission · 张伟提到家长同意](assets/showcase/shot-05.jpg)](https://fengmc2001.github.io/ai-video-workflow/?t=29.3#film)<br>Zhang Wei asks about permission<br>张伟提到家长同意 | **06 · 00:35**<br>[![Xu Nuo responds to both friends · 许诺回应两个人](assets/showcase/shot-06.jpg)](https://fengmc2001.github.io/ai-video-workflow/?t=35.5#film)<br>Xu Nuo responds to both friends<br>许诺回应两个人 |
+| **07 · 00:42**<br>[![Lin Hao changes his mind · 林浩接受建议](assets/showcase/shot-07.jpg)](https://fengmc2001.github.io/ai-video-workflow/?t=42.5#film)<br>Lin Hao changes his mind<br>林浩接受建议 | **08 · 00:50**<br>[![They walk on together · 三人继续向前](assets/showcase/shot-08.jpg)](https://fengmc2001.github.io/ai-video-workflow/?t=50.3#film)<br>They walk on together<br>三人继续向前 |
+
+[Shot plan · 分镜脚本](examples/traffic-safety/storyboard.json) · [G1 prompt · 前半段提示词](examples/traffic-safety/prompts/G1.md) · [G2 prompt · 后半段提示词](examples/traffic-safety/prompts/G2.md)
+
+## Before and after · 超分前后
+
+| Before · 480p source / 超分前原片 | After · 1080p / 超分后 |
+| :---: | :---: |
+| ![Source detail · 原片细节](assets/showcase/sr-before-detail.jpg) | ![Upscaled detail · 超分后细节](assets/showcase/sr-after-detail.jpg) |
+
+The same frame at 8 seconds, with identical crops. The 480p source is enlarged to the same display size. RealESRGAN_x2plus supplies 85% of the final image, blended with 15% Lanczos enlargement.
+
+两侧取自第 8 秒的同一帧，使用相同裁切。480p 原片放大到相同尺寸展示，超分采用 RealESRGAN_x2plus，按 85% 神经网络结果与 15% Lanczos 放大结果混合。
+
+**[Move the comparison slider · 拖动滑块对比](https://fengmc2001.github.io/ai-video-workflow/#comparison)** · [Full-frame comparison · 查看全幅对照](assets/super-resolution-comparison.jpg) · [Postproduction · 后期做法](docs/06-postproduction.md)
+
+## From idea to film · 从选题到成片
+
+The story comes first. Character sheets and shot plans give the generators something concrete to work from; local tools handle the final picture and sound.
+
+先想清楚故事，再做人物和分镜。参考图、台词与镜头一起交给生成工具，最后在本地处理画面和声音。
+
+| Stage · 阶段 | What goes into it · 做什么 |
+| --- | --- |
+| [01 Topic · 选题](docs/01-topic.md) | Find a familiar disagreement and decide where it leads.<br>找一个熟悉的分歧，想清楚结尾人物会作出什么选择。 |
+| [02 Characters · 人物画像](docs/02-characters.md) | Give each person a distinct look, voice and point of view.<br>写清外形、声音、性格，以及他为什么会这样想。 |
+| [03 Story & shots · 剧情分镜](docs/03-story-and-shots.md) | Write the conversation, then plan actions and camera positions.<br>先写对话，再安排动作、站位和镜头。 |
+| [04 Prompts · 提示词](docs/04-prompts.md) | Link characters, references and dialogue to each shot.<br>把角色、参考图、台词和镜头逐一对应。 |
+| [05 Refinement · 局部精修](docs/05-refinement.md) | Add a line, adjust the delivery, and keep the scene flowing.<br>补充一句动机，调整语气，让前后接得自然。 |
+| [06 Postproduction · 后期](docs/06-postproduction.md) | Interpolate, upscale, edit the audio, assemble and watermark.<br>插帧、超分、原声精修、合成与水印。 |
+
+This film uses Dreamina for its images and native Mandarin dialogue. The repository also includes notes for Flow and Fish Audio.
+
+本片用即梦生成画面与中文同期声。仓库也整理了 Flow 与 Fish Audio 的使用流程，方便其他题材选用。
+
+[Dreamina · 即梦](docs/providers/dreamina.md) · [Google Flow](docs/providers/flow.md) · [Fish Audio](docs/providers/fishaudio.md) · [Prompt templates · 提示词模板](prompts)
+
+## Try it · 动手做一支
+
+Python 3.10+ and FFmpeg. Install FFmpeg with `brew install ffmpeg` on macOS or `sudo apt-get install ffmpeg` on Ubuntu.
+
+需要 Python 3.10+ 和 FFmpeg。安装后，可以先导出本片的提示词，再新建自己的工程。
+
+~~~bash
 git clone https://github.com/Fengmc2001/ai-video-workflow.git
 cd ai-video-workflow
 python -m pip install -e .
 
-# 建一个新片目录
-aivideo init workspaces/my-film --title "我的动画短片"
-
-# 看完整示例，并导出上传参考与提示词
 aivideo check examples/traffic-safety/project.json
 aivideo prompts examples/traffic-safety/project.json --output workspaces/traffic-prompts
+aivideo init workspaces/my-film --title "My animated short"
+~~~
 
-# 给自己的成片加水印
-aivideo watermark my-film.mp4 --output my-film-fengmc.mp4 --text Fengmc
-```
+The CLI also handles local audio patches, assembly, super-resolution and watermarks.
 
-`aivideo --help` 可以查看全部命令。原声局部替换、镜头合成和超分的用法在[后期文档](docs/06-postproduction.md)。也可以[在 Colab 打开超分笔记本](https://colab.research.google.com/github/Fengmc2001/ai-video-workflow/blob/v0.1.0/notebooks/super-resolution.ipynb)。
+命令行工具也可以单独完成局部换声、合成、超分和加水印。
 
-## 生成工具怎么选
+[CLI & postproduction · 命令与后期](docs/06-postproduction.md) · [Open Colab notebook · 打开 Colab 超分笔记本](https://colab.research.google.com/github/Fengmc2001/ai-video-workflow/blob/v0.1.0/notebooks/super-resolution.ipynb) · [Showcase source · 展示页源码](site)
 
-这次示例使用 Dreamina 生成画面和中文同期声，再做官方 60fps 内插与 RealESRGAN_x2plus 超分。Flow 和 Fish Audio 的接入方法也放在仓库中，换题材时可以按需要组合。
+Code, documentation and prompts: [MIT](LICENSE). Media: [usage notes](ASSETS_LICENSE.md). Third-party code: [notices](THIRD_PARTY_NOTICES.md).
 
-- [Dreamina：人物参考、分段生成、同期声](docs/providers/dreamina.md)
-- [Flow：按分镜准备画面与参考素材](docs/providers/flow.md)
-- [Fish Audio：按角色制作独立配音](docs/providers/fishaudio.md)
-
-`project.json` 记录人物、台词、镜头和本地素材。换工具时沿用这份文件，重新绑定相应平台的素材即可。
-
-## 文件结构
-
-```text
-docs/                     制作过程与工具说明
-prompts/                  六个阶段的提示词模板
-examples/traffic-safety/   完整短片示例
-assets/                   人物、场景、声音和视频预览
-src/aivideo_workflow/      本地后期命令
-notebooks/                Colab 超分笔记本
-tests/                    音频、时间轴与导出检查
-```
-
-代码、文档和提示词采用 [MIT](LICENSE)。示例视频与美术素材的使用方式见 [ASSETS_LICENSE.md](ASSETS_LICENSE.md)，第三方组件见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+代码、文档和提示词采用 [MIT](LICENSE)。视频与美术素材见[使用说明](ASSETS_LICENSE.md)，第三方组件见[来源与授权](THIRD_PARTY_NOTICES.md)。
 
 — Fengmc

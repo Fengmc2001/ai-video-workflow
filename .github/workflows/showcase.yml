@@ -1,0 +1,47 @@
+name: Showcase
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "assets/**"
+      - "tools/build_showcase.py"
+      - "examples/traffic-safety/postproduction.json"
+      - ".github/workflows/showcase.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - uses: actions/configure-pages@v6
+      - name: Fetch the released film
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download v0.1.0 --repo "$GITHUB_REPOSITORY" --pattern traffic-safety-fengmc-1080p60.mp4 --dir .cache/site-media
+      - name: Build gallery and verify film checksum
+        run: python tools/build_showcase.py --video .cache/site-media/traffic-safety-fengmc-1080p60.mp4
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist/showcase
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish showcase
+        id: deployment
+        uses: actions/deploy-pages@v5

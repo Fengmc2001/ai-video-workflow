@@ -1,0 +1,27 @@
+{
+  "time_seconds": 8,
+  "source_resolution": [
+    854,
+    480
+  ],
+  "output_resolution": [
+    1920,
+    1080
+  ],
+  "model": "RealESRGAN_x2plus",
+  "strength": 0.85,
+  "display_size": [
+    1920,
+    1080
+  ],
+  "detail_crop_in_display_pixels": {
+    "x": 600,
+    "y": 30,
+    "width": 640,
+    "height": 640
+  },
+  "source_display_resampling": "Lanczos",
+  "same_frame": true,
+  "en": "Both views use the same frame. The 480p source is enlarged to the same display size; the detail views use identical crops.",
+  "zh": "两侧取自同一帧。480p原片放大至相同展示尺寸，细节图使用同一裁切区域。"
+}

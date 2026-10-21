@@ -1,0 +1,58 @@
+[
+  {
+    "id": "shot-01",
+    "time_seconds": 2,
+    "image": "shot-01.jpg",
+    "en": "A walk after school",
+    "zh": "放学路上"
+  },
+  {
+    "id": "shot-02",
+    "time_seconds": 7.5,
+    "image": "shot-02.jpg",
+    "en": "Lin Hao makes his case",
+    "zh": "林浩说出想法"
+  },
+  {
+    "id": "shot-03",
+    "time_seconds": 12.5,
+    "image": "shot-03.jpg",
+    "en": "Xu Nuo raises a concern",
+    "zh": "许诺认真提醒"
+  },
+  {
+    "id": "shot-04",
+    "time_seconds": 20.5,
+    "image": "shot-04.jpg",
+    "en": "It is only a short ride",
+    "zh": "就去附近而已"
+  },
+  {
+    "id": "shot-05",
+    "time_seconds": 29.3,
+    "image": "shot-05.jpg",
+    "en": "Zhang Wei asks about permission",
+    "zh": "张伟提到家长同意"
+  },
+  {
+    "id": "shot-06",
+    "time_seconds": 35.5,
+    "image": "shot-06.jpg",
+    "en": "Xu Nuo responds to both friends",
+    "zh": "许诺回应两个人"
+  },
+  {
+    "id": "shot-07",
+    "time_seconds": 42.5,
+    "image": "shot-07.jpg",
+    "en": "Lin Hao changes his mind",
+    "zh": "林浩接受建议"
+  },
+  {
+    "id": "shot-08",
+    "time_seconds": 50.3,
+    "image": "shot-08.jpg",
+    "en": "They walk on together",
+    "zh": "三人继续向前"
+  }
+]
