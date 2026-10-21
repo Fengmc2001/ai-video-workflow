@@ -4,6 +4,10 @@ The page includes the Mandarin film from v0.1.0 and its English dub from v0.2.0.
 
 展示页提供 v0.1.0 的中文成片与 v0.2.0 的英文配音版，提供浏览器播放、人物定妆照、八个可跳转的分镜和超分对比滑块。
 
+The four buttons below the player combine dialogue and picture quality: Mandarin or English, each in 1080p60 or 540p30. Switching keeps your place and playback state.
+
+播放器下方的四个按钮按 2×2 排列：中文、英文各一行，均可选 1080p60 或 540p30。切换时保留播放进度和播放／暂停状态。
+
 ## Preview locally · 本地预览
 
 ~~~bash
