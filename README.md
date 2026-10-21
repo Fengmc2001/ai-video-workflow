@@ -13,17 +13,17 @@ A short animated film, and the materials used to make it: characters, shots, pro
 [![Watch the full film · 观看完整成片](assets/showcase/film-preview.gif)](https://fengmc2001.github.io/ai-video-workflow/#film)
 
 **The e-bike debate · 骑电动车的小争论**<br>
-52.13s · 1920 × 1080 · 60fps · Mandarin dialogue / 中文同期声 · Fengmc
+52.13s · 1920 × 1080 · 60fps · Mandarin & English / 中文原声与英文配音 · Fengmc
 
 Three classmates are walking home. Lin Hao thinks an e-bike would make life easier; Xu Nuo and Zhang Wei have their own views. The conversation gives each of them a reason to reconsider.
 
 林浩觉得天天骑自行车太累，想换电动车。许诺谈起上路年龄，张伟提到家长同意。三个人把话说开，也各自作出了选择。
 
-The image above is a silent excerpt. **[Play the full film](https://fengmc2001.github.io/ai-video-workflow/#film)** in the browser, with sound and a 1080p60 option.
+The image above is a silent excerpt. **[Play the full film](https://fengmc2001.github.io/ai-video-workflow/#film)** in the browser, with Mandarin or English dialogue and a 1080p60 option.
 
-上方是静音片段预览。**[点击播放完整成片](https://fengmc2001.github.io/ai-video-workflow/#film)**，在浏览器里观看，带原声，可选 1080p60。
+上方是静音片段预览。**[点击播放完整成片](https://fengmc2001.github.io/ai-video-workflow/#film)**，在浏览器里选择中文或英文配音，可选 1080p60。
 
-[Release & MP4 · 成片下载](https://github.com/Fengmc2001/ai-video-workflow/releases/tag/v0.1.0) · [Case study · 完整案例](examples/traffic-safety/README.md)
+[English version · 英文版](https://fengmc2001.github.io/ai-video-workflow/?lang=en#film) · [中文原声 · Mandarin](https://fengmc2001.github.io/ai-video-workflow/?lang=zh#film) · [Release & MP4 · 成片下载](https://github.com/Fengmc2001/ai-video-workflow/releases) · [Case study · 完整案例](examples/traffic-safety/README.md)
 
 ## Meet the cast · 人物定妆照
 
@@ -77,11 +77,11 @@ The story comes first. Character sheets and shot plans give the generators somet
 | [05 Refinement · 局部精修](docs/05-refinement.md) | Add a line, adjust the delivery, and keep the scene flowing.<br>补充一句动机，调整语气，让前后接得自然。 |
 | [06 Postproduction · 后期](docs/06-postproduction.md) | Interpolate, upscale, edit the audio, assemble and watermark.<br>插帧、超分、原声精修、合成与水印。 |
 
-This film uses Dreamina for its images and native Mandarin dialogue. The repository also includes notes for Flow and Fish Audio.
+This film uses Dreamina for its images and native Mandarin dialogue. The English dub uses the official CLI with a separate voice for each character, mixed with the original ambience. The repository also includes notes for Flow and Fish Audio.
 
-本片用即梦生成画面与中文同期声。仓库也整理了 Flow 与 Fish Audio 的使用流程，方便其他题材选用。
+本片用即梦生成画面与中文同期声，英文版通过官方 CLI 逐角色配音，再混入原片环境声。仓库也整理了 Flow 与 Fish Audio 的使用流程，方便其他题材选用。
 
-[Dreamina · 即梦](docs/providers/dreamina.md) · [Google Flow](docs/providers/flow.md) · [Fish Audio](docs/providers/fishaudio.md) · [Prompt templates · 提示词模板](prompts)
+[English dubbing · 英文配音](docs/07-english-dub.md) · [Dreamina · 即梦](docs/providers/dreamina.md) · [Google Flow](docs/providers/flow.md) · [Fish Audio](docs/providers/fishaudio.md) · [Prompt templates · 提示词模板](prompts)
 
 ## Try it · 动手做一支
 

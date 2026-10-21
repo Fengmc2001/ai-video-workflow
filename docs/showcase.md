@@ -1,14 +1,15 @@
 # Showcase page · 作品展示页
 
-The page uses the same watermarked film as Release v0.1.0. It includes native browser playback, character sheets, eight clickable shots and a super-resolution slider.
+The page includes the Mandarin film from v0.1.0 and its English dub from v0.2.0. It includes native browser playback, character sheets, eight clickable shots and a super-resolution slider.
 
-展示页使用 v0.1.0 Release 中同一份水印成片，提供浏览器播放、人物定妆照、八个可跳转的分镜和超分对比滑块。
+展示页提供 v0.1.0 的中文成片与 v0.2.0 的英文配音版，提供浏览器播放、人物定妆照、八个可跳转的分镜和超分对比滑块。
 
 ## Preview locally · 本地预览
 
 ~~~bash
 gh release download v0.1.0 --repo Fengmc2001/ai-video-workflow --pattern traffic-safety-fengmc-1080p60.mp4 --dir .cache/site-media
-python tools/build_showcase.py --video .cache/site-media/traffic-safety-fengmc-1080p60.mp4
+gh release download v0.2.0 --repo Fengmc2001/ai-video-workflow --pattern traffic-safety-english-fengmc-1080p60.mp4 --dir .cache/site-media
+python tools/build_showcase.py --video .cache/site-media/traffic-safety-fengmc-1080p60.mp4 --english-video .cache/site-media/traffic-safety-english-fengmc-1080p60.mp4
 python tools/serve_showcase.py --directory dist/showcase
 ~~~
 

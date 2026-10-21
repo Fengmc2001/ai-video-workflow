@@ -7,6 +7,7 @@ on:
       - "assets/**"
       - "tools/build_showcase.py"
       - "examples/traffic-safety/postproduction.json"
+      - "examples/traffic-safety/english-version.json"
       - ".github/workflows/showcase.yml"
   workflow_dispatch:
 permissions:
@@ -27,8 +28,12 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh release download v0.1.0 --repo "$GITHUB_REPOSITORY" --pattern traffic-safety-fengmc-1080p60.mp4 --dir .cache/site-media
-      - name: Build gallery and verify film checksum
-        run: python tools/build_showcase.py --video .cache/site-media/traffic-safety-fengmc-1080p60.mp4
+      - name: Fetch the English dub
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download v0.2.0 --repo "$GITHUB_REPOSITORY" --pattern traffic-safety-english-fengmc-1080p60.mp4 --dir .cache/site-media
+      - name: Build gallery and verify film checksums
+        run: python tools/build_showcase.py --video .cache/site-media/traffic-safety-fengmc-1080p60.mp4 --english-video .cache/site-media/traffic-safety-english-fengmc-1080p60.mp4
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist/showcase

@@ -1,0 +1,80 @@
+{
+  "title": "The e-bike debate · English dub",
+  "file": "traffic-safety-english-fengmc-1080p60.mp4",
+  "sha256": "6bf43e8cbc78f675988cda5b63292c7f266712db18ff68a6882e8cf95ae62905",
+  "duration_seconds": 52.13333333333333,
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "60/1",
+    "frames": 3128,
+    "stream_same_as_mandarin": true
+  },
+  "audio": {
+    "language": "en",
+    "model": "seed_audio_v1",
+    "scenario": "omni-dubbing",
+    "source_references": "Original AI-generated voices of Lin Hao, Xu Nuo and Zhang Wei",
+    "background": "Original ambience, separated locally with Demucs",
+    "duration_seconds": 52.133333
+  },
+  "watermark": "Fengmc",
+  "script": [
+    {
+      "id": "A0_intro",
+      "speaker": "linhao",
+      "text": "Cycling every day is exhausting!",
+      "start": 1.0,
+      "end": 3.7737291666666666
+    },
+    {
+      "id": "A1",
+      "speaker": "linhao",
+      "text": "I'm not sixteen yet, but I'm great at riding an e-bike. I'll be fine!",
+      "start": 4.4,
+      "end": 8.932479166666667
+    },
+    {
+      "id": "B1",
+      "speaker": "xunuo",
+      "text": "But you're under sixteen! Riding an e-bike on the road is illegal and dangerous.",
+      "start": 9.85,
+      "end": 15.140104166666667
+    },
+    {
+      "id": "A2",
+      "speaker": "linhao",
+      "text": "Oh, come on! It's our family e-bike. Just two minutes to the shop. What could go wrong?",
+      "start": 15.4,
+      "end": 21.540270833333334
+    },
+    {
+      "id": "C1",
+      "speaker": "zhangwei",
+      "text": "Xu Nuo, my parents let me ride it. Not even nearby?",
+      "start": 26.7,
+      "end": 32.18414583333333
+    },
+    {
+      "id": "B2",
+      "speaker": "xunuo",
+      "text": "Even with permission, rules still apply. We're under sixteen. We can't ride e-bikes on the road.",
+      "start": 32.7,
+      "end": 38.990520833333335
+    },
+    {
+      "id": "A3",
+      "speaker": "linhao",
+      "text": "Yeah, you're right. I'll stick to my bicycle. The e-bike can wait till I'm sixteen.",
+      "start": 39.6,
+      "end": 45.272020833333336
+    },
+    {
+      "id": "C2",
+      "speaker": "zhangwei",
+      "text": "Okay, no e-bike for me either. Come on, Lin Hao!",
+      "start": 45.8,
+      "end": 49.89060416666667
+    }
+  ]
+}

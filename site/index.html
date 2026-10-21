@@ -10,8 +10,8 @@
   <meta property="og:description" content="From an idea to a finished animated short. 从一个选题，到一支动画短片。">
   <meta property="og:image" content="https://fengmc2001.github.io/ai-video-workflow/assets/demo-poster.jpg">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=0.2.0">
+  <script src="app.js?v=0.2.0" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#film">Skip to film · 跳到成片</a>
@@ -45,13 +45,17 @@
           </video>
         </div>
         <div class="player-toolbar">
+          <div class="language-switch" role="group" aria-label="Dialogue language · 配音语言">
+            <button type="button" data-language="zh" aria-pressed="true" lang="zh-CN">中文</button>
+            <button type="button" data-language="en" aria-pressed="false" lang="en">English</button>
+          </div>
           <div class="quality-switch" role="group" aria-label="Video quality · 视频画质">
             <button type="button" data-quality="full" aria-pressed="true">1080p · 60fps</button>
             <button type="button" data-quality="preview" aria-pressed="false">540p · 30fps</button>
           </div>
-          <span id="player-status" role="status">Ready to play <span lang="zh-CN">点击播放</span></span>
         </div>
-        <p class="player-note">The full film, with its original dialogue and Fengmc watermark.<br><span lang="zh-CN">完整成片，保留中文同期声与 Fengmc 水印。</span></p>
+        <div class="player-metadata"><span id="player-status" role="status">Ready to play · 点击播放</span></div>
+        <p class="player-note">Full film with Mandarin dialogue or an English dub, and the Fengmc watermark.<br><span lang="zh-CN">完整成片，可选中文原声或英文配音，保留 Fengmc 水印。</span></p>
       </div>
     </section>
 

@@ -1,4 +1,4 @@
-"""Build the public gallery with a verified copy of the released film."""
+"""Build the bilingual gallery with verified Mandarin and English films."""
 
 from pathlib import Path
 import argparse
@@ -7,19 +7,27 @@ import json
 import shutil
 
 
-def build(video, output):
-    root = Path(__file__).resolve().parents[1]
-    video = Path(video).resolve()
-    output = Path(output).resolve()
-    expected = json.loads(
-        (root / "examples/traffic-safety/postproduction.json").read_text()
-    )["published_video"]["sha256"]
+def file_hash(path):
     digest = hashlib.sha256()
-    with video.open("rb") as handle:
+    with Path(path).open("rb") as handle:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(block)
-    if digest.hexdigest() != expected:
-        raise ValueError("Use the watermarked video from Release v0.1.0.")
+    return digest.hexdigest()
+
+
+def build(video, english_video, output):
+    root = Path(__file__).resolve().parents[1]
+    output = Path(output).resolve()
+    case = root / "examples/traffic-safety"
+    original = json.loads((case / "postproduction.json").read_text())["published_video"]
+    english = json.loads((case / "english-version.json").read_text())
+    versions = [
+        ("zh-CN", Path(video).resolve(), original["file"], original["sha256"]),
+        ("en", Path(english_video).resolve(), english["file"], english["sha256"]),
+    ]
+    for language, source, name, expected in versions:
+        if file_hash(source) != expected:
+            raise ValueError("Film checksum did not match: " + language)
     if output.exists():
         raise FileExistsError("Choose an empty output directory.")
     output.mkdir(parents=True)
@@ -28,10 +36,13 @@ def build(video, output):
             shutil.copyfile(path, output / path.name)
     shutil.copytree(root / "assets", output / "assets")
     (output / "media").mkdir()
-    shutil.copyfile(video, output / "media/traffic-safety-fengmc-1080p60.mp4")
+    for language, source, name, expected in versions:
+        shutil.copyfile(source, output / "media" / name)
     result = {
-        "film": "media/traffic-safety-fengmc-1080p60.mp4",
-        "sha256": expected,
+        "versions": [
+            {"language": language, "file": "media/" + name, "sha256": expected}
+            for language, source, name, expected in versions
+        ],
         "languages": ["en", "zh-CN"],
         "pages": ["index.html"],
     }
@@ -44,6 +55,11 @@ def build(video, output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--video", required=True)
+    parser.add_argument("--english-video", required=True)
     parser.add_argument("--output", default="dist/showcase")
     arguments = parser.parse_args()
-    print(json.dumps(build(arguments.video, arguments.output), indent=2))
+    print(
+        json.dumps(
+            build(arguments.video, arguments.english_video, arguments.output), indent=2
+        )
+    )
